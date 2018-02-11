@@ -94,6 +94,7 @@ ul,li{
 }
 #me{
 	position:fixed;
+	font-family: Microsoft YaHei;
 	font-size: 24px;
 	text-decoration:blink;
 	text-shadow: 0 0 20px white;
