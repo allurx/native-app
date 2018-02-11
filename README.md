@@ -16,4 +16,4 @@
 # 阅读页面：
 ![image](https://github.com/Allurx/NativeApp/raw/master/screenshots/3.png)
 
-# 后续功能正在开发中。。。
+# 后续更多功能正在开发中。。。
