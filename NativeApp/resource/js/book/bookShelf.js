@@ -255,7 +255,7 @@
 		judgeBrowser:function(){
 			var result;
 			var xhr = new XMLHttpRequest();
-        	xhr.open("get", "不要修改这个文件.txt", true);  
+        	xhr.open("get", "do not modify this file.txt", true);  
         	xhr.responseType = "arraybuffer";
         	xhr.onload = function() {
             	Book.prototype.init();
