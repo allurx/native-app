@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/public/bootstrap/core/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/public/loader/loaders.min.css">
+    <link rel="stylesheet" href="../../css/book/reading.css">
+    <script src="../../js/public/jquery/jquery-3.1.1.min.js"></script>
+    <script src="../../js/public/bootstrap/core/bootstrap.min.js"></script>
+    <script src="../../js/public/loader/loaders.css.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="head">
+            <div id="head-left">
+                <span></span>
+            </div>
+            <div id="head-right">
+                <div id="chapter-btn">
+                    <span class="glyphicon glyphicon-list" id="chapter"></span>
+                </div>
+                <div id="save-btn">
+                    <span class="glyphicon glyphicon-file" id="saveRecord"></span>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div id="txt" tabIndex=-1>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-left">
+                <div id="progressRate">
+                    <span class="percentage"></span>
+                </div>
+            </div>
+            <div id="footer-center">
+                <button type="button" class="btn btn-primary Previous">上一章</button>
+                <button type="button" class="btn btn-primary next">下一章</button>
+            </div>
+            <div id="footer-right">
+                <div id="setUp-btn">
+                    <span class="glyphicon glyphicon-cog" id="setUp"></span>
+                </div>
+                <div id="changePagePosition">
+                    <div class="toPageTop">
+                        <span class="glyphicon glyphicon-chevron-up pageTop"></span>
+                    </div>
+                    <div class="toPageBottom">
+                        <span class="glyphicon glyphicon-chevron-down pageBottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="directory" class="dragObj">
+            <div id="directory-head">
+                <h1>目录</h1></div>
+            <div id="directory-body"></div>
+        </div>
+        <!--遮罩层-->
+        <div class="pageOver">
+            <div class="loading loader-inner ball-spin-fade-loader"></div>
+        </div>
+        <!--设置页面-->
+        <div id="setUpPage" class="dragObj">
+            <div id="setUp-head">
+                <span>设置</span>
+            </div>
+            <div id="setUp-body">
+                <ul id="setUp-items">
+                    <li id="font-size">
+                        <span>字体大小</span>
+                        <span class="plus">&#43</span>
+                        <span id="font-value">20</span>
+                        <span class="minus">&#8722</span>
+                    </li>
+                    <li id="bgColor">
+                        <span>背景颜色</span>
+                        <input type="color" id="myColor">
+                    </li>
+                </ul>
+            </div>
+            <div id="setUp-footer">
+                <div id="save-setUp" class="setUp-btn">
+                    <span>保存</span>
+                </div>
+            </div>
+            <div id="close-btn">&#10006</div>
+        </div>
+    </div>
+    <script src="../../js/book/reading.js"></script>
+</body>
+
+</html>

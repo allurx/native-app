@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的书架</title>
+<link rel="stylesheet" href="../../css/public/bootstrap/core/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/book/bookshelf.css">
+<script src="../../js/public/jquery/jquery-3.1.1.min.js"></script>
+<script src="../../js/public/bootstrap/core/bootstrap.min.js"></script>
+<script src="../../js/public/md5/md5.min.js"></script>
+</head>
+<body>
+ 	<div id="container">
+ 		<div id="head">
+ 			<div id="head-left">
+ 				<span>我的书架</span>
+ 			</div>
+ 			<div id="head-right">
+ 				<span class="glyphicon glyphicon-home" style="color: white;font-size:28px;cursor: pointer;"></span>
+ 				<span class="glyphicon glyphicon-trash" style="color: white;font-size:28px;cursor: pointer;"></span>				
+ 			</div>
+ 		</div>
+ 		<div id="body">
+ 			<div id="body-left">
+ 				<div id="booksType">
+      				<button class="btn btn-primary bookType">玄幻</button>
+				 	<button class="btn btn-primary bookType">奇幻</button>
+				 	<button class="btn btn-primary bookType">武侠</button>
+				 	<button class="btn btn-primary bookType">仙侠</button>
+				 	<button class="btn btn-primary bookType">科幻</button>
+				 	<button class="btn btn-primary bookType">末日</button>
+				 	<button class="btn btn-primary bookType">都市</button>
+				 	<button class="btn btn-primary bookType">职场</button>
+				 	<button class="btn btn-primary bookType">军事</button>
+				 	<button class="btn btn-primary bookType">历史</button>
+				 	<button class="btn btn-primary bookType">游戏</button>
+				 	<button class="btn btn-primary bookType">体育</button>
+				 	<button class="btn btn-primary bookType">灵异</button>
+      			</div>
+      		</div>
+ 			<div id="body-right">
+ 				<ul id="booksList">
+ 					<li id="addBook">
+ 						<div id="addBook-item">
+ 							<span class="glyphicon glyphicon-plus" style="color: rgb(0, 0, 0);font-size:40px;"></span>
+ 							<input type="file" id="file">
+ 						</div>	
+ 					</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 		<div id="footer"></div>
+ 	</div>
+ 	<script src="../../js/book/bookShelf.js"></script>
+</body>
+</html>

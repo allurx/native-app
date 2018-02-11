@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>帮助文档</title>
+    <link rel="stylesheet" href="../../css/book/help.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="head">
+        	<span>帮助文档</span>
+        </div>
+        <div id="body">
+        	<p class="focus">PS：请尽可能的使用最新的现代浏览器，避免发生一些不可预期的错误。</p>
+        	<div class="question question1">
+        		<h3>一、Chrome，360等浏览器无法读取本地文件的解决办法：</h3>
+        		<p>右击桌面的浏览器图标(如果没有先创建快捷方式)，然后在下图的目标栏尾部填入<span class="focus">--allow-file-access-from-files</span>，表示允许从本地载入资源。<span class="focus">注意在尾部留一个空格。然后点击应用>确定，最后重启浏览器，再打开网页即可。(切记先打开浏览器再打开网页，不要双击直接打开网页。)</span></p>
+        		<img class="answer" src="../../img/book/question1.png">
+        	</div>
+        	<div class="question question2">
+        		<h3>二、火狐浏览器无法读取本地文件以及显示字体图标：</h3>
+        		<p>1、在地址栏搜索about:config</p>
+				<p>2、进入后搜索<span class="focus">security.fileuri.strict_origin_policy</span>。<span class="focus">该值为true，双击设置为false</span>，刷新页面就可以正常显示了</p>
+				<img class="answer" src="../../img/book/question2.png">
+        	</div>
+        </div>
+        <div id="footer">
+        </div>
+</body>
+
+</html>

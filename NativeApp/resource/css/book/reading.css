@@ -1,0 +1,272 @@
+html,body {
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+body{
+	background-color: #be966e;
+}
+ul,li{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+#container{
+	width: 45%;
+	max-width: 800px;
+	min-width: 550px;
+	height:100%;
+	display: inline-block;
+	background-color: /* #EBE5D8 */#f2e8c8;
+	text-align:left;
+	resize:horizontal;/*只允许调整元素的宽度*/
+	overflow:hidden;
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+#head{
+	height: 10%;
+	height:-moz-calc(120px);
+    height:-webkit-calc(120px);
+	height: calc(120px);
+	padding:20px 60px;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	justify-content:space-between;
+}
+#head-left{
+	width: 80%;
+}
+#head-left span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 28px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+
+}
+#head-right{
+	width: 20%;
+	text-align: right;
+}
+#chapter-btn{
+	margin-right: 20px;
+}
+#head-right div{
+	display: inline-block;
+}
+#head-right span{
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	font-size:26px;
+}
+
+#body{
+	height: 80%;
+	height:-moz-calc(100% - 120px - 80px);
+    height:-webkit-calc(100% - 120px - 80px);
+	height: calc(100% - 120px - 80px)
+}
+
+#txt{
+	height:100%;
+	white-space:pre-wrap;
+	padding:20px 60px;
+	overflow-y:auto;
+	overflow-x: hidden;
+	outline:none;
+	font-size: 20px;
+	font-family:Microsoft YaHei;
+}
+#txt p{
+	line-height:2;
+	margin:0;
+}
+#footer{
+	height: 10%;
+	height:-moz-calc(80px);
+    height:-webkit-calc(80px);
+	height: calc(80px);
+	padding:0 60px;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	justify-content:space-between;
+}
+#progressRate{
+	color:rgba(0,0,0,0.8);
+	font-size:20px;
+	font-family:Microsoft YaHei;
+	width: 80px; 
+}
+#setUp-btn{
+	color:rgba(0,0,0,0.8);
+	font-size:26px;
+	cursor: pointer;
+	float: left;
+	width: 40px;
+	margin-top:;
+}
+#footer-right{
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	justify-content:space-between;
+}
+#changePagePosition{
+	float: right;
+}
+#changePagePosition div{
+	width: 40px;
+	text-align: right;
+}
+#changePagePosition span{
+	color:rgba(0,0,0,0.8);
+	font-size:26px;
+	cursor: pointer;	 
+}
+#directory{
+	width:200px;
+	height:350px;
+	background-color: #EBE5D8;
+	border-radius:4px;
+	position:fixed;
+	top:120px;
+	right:100px;	
+	padding-top:15px;
+	padding-left: 20px;
+	 display:none; 
+	font-family:Microsoft YaHei;
+	font-size:16px;		
+	box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+	overflow:hidden;
+	resize:both;/*允许调整元素的宽度和高度*/
+}
+#directory-head{
+	height: 15%
+	height:-moz-calc(50px);
+    height:-webkit-calc(50px);
+	height: calc(50px)
+}
+#directory-body{
+	height: 85%;
+	height:-moz-calc(100% - 50px);
+    height:-webkit-calc(100% - 50px);
+	height: calc(100% - 50px);
+	overflow-y: scroll;
+}
+#directory-head h1{
+	color:#337ab7;
+	margin:0;
+}
+#directory-body p{
+	line-height:2;
+	color:#444;
+	margin:0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#directory-body p:hover{
+	color:#337ab7;
+	cursor:pointer;
+}
+.pageOver{
+    background: rgba(0,0,0,0.4); 
+    display: none;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:100; 
+}
+.loading{
+	z-index:101;
+	text-align:center;
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+.loading > div { 
+ background-color:orange;  
+}
+
+#setUpPage{
+	position: fixed;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	display: none;
+	width: 400px;
+	height: 500px;
+	left:0;
+	top:0;
+	left:-moz-calc((100% - 400px) * 0.5);
+    left:-webkit-calc((100% - 400px) * 0.5);
+	left: calc((100% - 400px) * 0.5);
+	top:-moz-calc((100% - 500px) * 0.5);
+    top:-webkit-calc((100% - 500px) * 0.5);
+	top: calc((100% - 500px) * 0.5);
+	background-color:#EBE5D8;
+	border-radius:8px;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.5);
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+
+#setUp-head{
+	height: 80px;
+	line-height: 80px;
+	padding-left: 30px;
+}
+#setUp-body{
+	height: 340px;
+	padding: 0 30px;
+}
+#setUp-footer{
+	height: 80px;
+	text-align: center;
+}
+#setUp-items li{
+	height: 50px;
+	line-height: 50px;
+}
+#setUp-items span{
+	margin-right: 40px;
+	vertical-align: middle;
+}
+.plus,.minus{
+	font-size: 32px;
+	font-weight: 900;
+	cursor: pointer;
+}
+#myColor{
+	width: 100px;
+	height: 30px;
+	vertical-align: middle;
+}
+.setUp-btn{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	margin-top: 25px;
+	cursor: pointer;
+	border-radius:4px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	background-color: #337ab7;
+	box-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+#close-btn{
+	position: absolute;
+	right:10px;
+	top:10px;
+	cursor: pointer;
+}
