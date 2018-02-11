@@ -92,6 +92,15 @@ ul,li{
 	user-select: none; 
 
 }
+#me{
+	position:fixed;
+	font-size: 24px;
+	text-decoration:blink;
+	text-shadow: 0 0 20px white;
+	color:purple;
+	top:90%;
+	left: 85%;
+}
 
 /* .myImg:hover{
 	animation:myAnimation 4s infinite alternate;
