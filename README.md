@@ -7,4 +7,4 @@
 4、如果手动清除浏览器缓存将会清除之前保存的所有记录。<br>
 5、参考帮助页面的文档。<br>
 
-![image](https://github.com/Allurx/NativeApp/screenshots/1.png)
+![image](https://github.com/Allurx/NativeApp/raw/master/screenshots/1.png)
