@@ -279,18 +279,17 @@
     $(document).on("mousedown", ".dragObj", function() {
         var e = arguments[0];
         if (e.button == 0) { // 鼠标左键
-            var obj = $(this);
-            var disx = e.clientX - $(this).css("left").replace("px", ""); // 鼠标横坐标点到div的左边界距离
-            var disy = e.clientY - $(this).css("top").replace("px", ""); // 鼠标纵坐标点到div的上边界距离
+            var obj = $(this).css("cursor", "move");
+            var disx = e.clientX - obj.css("left").replace("px", ""); // 鼠标横坐标点到div的左边界距离
+            var disy = e.clientY - obj.css("top").replace("px", ""); // 鼠标纵坐标点到div的上边界距离
             $(document).mousemove(function() {
                 var e = arguments[0];
-                obj.css("cursor", "move");
                 var left = e.clientX - disx; // 获取div距离屏幕左边的距离
                 var top = e.clientY - disy; // 获取fdiv距离屏幕顶部的距离 
                 obj.css({ "left": left, "top": top });
             });
             $(document).mouseup(function() {
-                position(obj).css("cursor", "auto");
+                obj.css("cursor", "auto");
                 $(document).unbind("mousemove"); // 移除mousemove事件
                 $(document).unbind("mouseup"); // 移除mouseup事件 
             });
